@@ -11,7 +11,7 @@ const Home = () => {
       <NavBar></NavBar>
       <Banner> Kitchen</Banner>
       <TrackOrder></TrackOrder>
-      <main className="min-h-[calc(100vh-280px)]">
+      <main className="min-h-[calc(100vh-700px)] lg:min-h-[calc(100vh-880px)]">
         <Outlet></Outlet>
       </main>
       <Footer></Footer>

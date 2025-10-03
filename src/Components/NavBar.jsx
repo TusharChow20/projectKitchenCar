@@ -1,5 +1,6 @@
 import React from "react";
 import ThemeControl from "./ThemeControl";
+import { Link } from "react-router";
 
 const NavBar = () => {
   return (
@@ -29,16 +30,16 @@ const NavBar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
               <li>
-                <a>Orders</a>
+                <Link to={"/orders"}>Orders</Link>
               </li>
               <li>
-                <a>Foods</a>
+                <Link to={"/foods"}>Foods</Link>
               </li>
               <li>
-                <a>Tables</a>
+                <Link to={""}>Tables</Link>
               </li>
               <li>
-                <a className="btn  text-xs p-2 flex rounded-xl">Logout</a>
+                <Link className="btn  text-xs p-2 flex rounded-xl">Logout</Link>
               </li>
             </ul>
           </div>
@@ -52,12 +53,18 @@ const NavBar = () => {
         <div className="navbar-end w-full items-end hidden lg:flex">
           <ul className="menu menu-horizontal px-1 flex gap-4 text-2xl ">
             <li>
-              <a className="border-b-2  border-[#fcb900] duration-500 ease-in-out  hover:scale-105 hover:shadow-lg">
-                Orders
-              </a>
+              <Link
+                to="/orders"
+                className="border-b-2  border-[#fcb900] duration-500 ease-in-out  hover:scale-105 hover:shadow-lg"
+              >
+                <p>Order</p>
+              </Link>
             </li>
             <li>
-              <a className="border-b-2  border-[#fcb900] duration-500 ease-in-out  hover:scale-105 hover:shadow-lg">
+              <a
+                href="/foods"
+                className=" border-b-2  border-[#fcb900] duration-500 ease-in-out  hover:scale-105 hover:shadow-lg"
+              >
                 Foods
               </a>
             </li>
