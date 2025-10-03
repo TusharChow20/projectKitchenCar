@@ -3,8 +3,8 @@ import ThemeControl from "./ThemeControl";
 
 const NavBar = () => {
   return (
-    <div>
-      <div className="navbar bg-base-100 shadow-sm">
+    <div className="">
+      <div className="navbar bg-base-100 shadow-sm px-3 md:px-7 lg::px-10">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -50,21 +50,29 @@ const NavBar = () => {
           </div>
         </div>
         <div className="navbar-end w-full items-end hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 flex gap-4 text-2xl ">
             <li>
-              <a>Orders</a>
+              <a className="border-b-2  border-[#fcb900] duration-500 ease-in-out  hover:scale-105 hover:shadow-lg">
+                Orders
+              </a>
             </li>
             <li>
-              <a>Foods</a>
+              <a className="border-b-2  border-[#fcb900] duration-500 ease-in-out  hover:scale-105 hover:shadow-lg">
+                Foods
+              </a>
             </li>
             <li>
-              <a>Tables</a>
+              <a className="border-b-2 border-[#fcb900] duration-500 ease-in-out  hover:scale-105 hover:shadow-lg">
+                Tables
+              </a>
             </li>
             <li></li>
           </ul>
         </div>
         <div className="navbar-end  flex gap-4 lg:w-1/5 lg:px-3">
-          <a className="btn hidden lg:flex">Logout</a>
+          <a className="btn hidden lg:flex duration-500 ease-in-out  hover:scale-105 hover:shadow-lg md:text-2xl">
+            Logout
+          </a>
           <ThemeControl></ThemeControl>
         </div>
       </div>
