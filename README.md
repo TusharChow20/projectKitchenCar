@@ -17,11 +17,17 @@
 
 ---
 
+<p align="center">
+  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXdhZjBnM2tyNTMyc3l3MGljZWNocHFjaHVmemd2YnBqdWtqNmpvYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/keUhKk6N8ktkslAErm/giphy.gif" width="650" alt="Kitchen Car Animation"/>
+</p>
+
+---
+
 ## 🍔 Overview
 
 **Project Kitchen Car** is a dynamic **React-based food ordering app** that simulates a real-time order process.
 
-When you click **“Confirm Order”**, the food goes into the **Cooking** section, and after a few seconds, it automatically moves to the **Served** section — mimicking a kitchen workflow.
+When you click **“Confirm Order”**, the food goes into the **Cooking** section, and after a few seconds, it automatically moves to the **Served** section — mimicking a real kitchen workflow.
 
 This project was built to practice **React state management**, **Context API**, and **real-time UI updates**.
 
@@ -30,10 +36,10 @@ This project was built to practice **React state management**, **Context API**, 
 ## 🚀 Features
 
 ✨ **Data Fetching with Axios** – Smoothly loads order data from a JSON API.  
-🧠 **Global State with useContext** – Shares order data across components.  
+🧠 **Global State with useContext** – Shares order data across multiple components.  
 ⏱️ **Dynamic Timer** – Automatically transitions from *Cooking → Served* after countdown.  
-🧩 **Component Communication** – State updates flow from parent to all children seamlessly.  
-💅 **Tailwind Styling** – Clean, modern UI with responsive design.  
+🧩 **Component Communication** – State updates flow cleanly across all components.  
+💅 **Tailwind Styling** – Clean, modern, responsive UI.  
 
 ---
 
@@ -43,36 +49,36 @@ This project was built to practice **React state management**, **Context API**, 
 |-------------|-------------|
 | ⚛️ **React.js** | Component-based UI library |
 | 🧩 **Context API** | Global state management |
-| 🌐 **Axios** | API data fetching |
-| 🎨 **Tailwind CSS** | Responsive styling |
+| 🌐 **Axios** | Data fetching library |
+| 🎨 **Tailwind CSS** | Fast, responsive styling |
 | 🚀 **Netlify** | Live deployment platform |
 
 ---
 
 ## 🧠 What I Learned
 
-📚 Implementing **Context API** to share and update data across multiple components  
-🕒 Handling **timers and side effects** using `useEffect`  
-🔄 Managing **dynamic state transitions** for real-time updates  
-🎨 Structuring reusable UI with **props and state**  
-⚡ Building a clean, deployable React project with **Netlify**
+📚 Implementing **Context API** to manage shared states efficiently.  
+🕒 Handling **timers and side effects** using `useEffect`.  
+🔄 Managing **dynamic state transitions** between multiple arrays.  
+🎨 Structuring clean, reusable UI with **React components**.  
+⚡ Building and deploying a responsive React project with **Netlify**.  
 
 ---
 
-## 🧑‍💻 How It Works
+## 🧑‍🍳 How It Works
 
-1. Data fetched via Axios → displayed in Food Cards 🍛  
-2. User clicks **“Confirm Order”** → item added to Cooking List 🔥  
-3. A timer starts ⏳ → countdown visible on the button  
-4. Once time ends → item auto-moves to Served List ✅  
-5. Counts update in real-time 📊  
+1. Data fetched via **Axios** → displayed as Food Cards 🍛  
+2. User clicks **“Confirm Order”** → item added to **Cooking** 🔥  
+3. A **timer** starts → countdown shown dynamically ⏳  
+4. When done → item auto-moves to **Served** ✅  
+5. Counts for both **Cooking** and **Served** update live 📊  
 
 ---
 
 ## 📸 Demo Preview
 
 <p align="center">
-  <img src="[https://i.ibb.co/fGv9MMk/kitchen-car-preview.gif](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXdhZjBnM2tyNTMyc3l3MGljZWNocHFjaHVmemd2YnBqdWtqNmpvYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/keUhKk6N8ktkslAErm/giphy.gif)" width="700px" alt="Kitchen Car Demo Animation"/>
+  <img src="https://i.ibb.co/fGv9MMk/kitchen-car-preview.gif" width="700px" alt="Kitchen Car Demo Animation"/>
 </p>
 
 ---
@@ -81,14 +87,14 @@ This project was built to practice **React state management**, **Context API**, 
 
 👋 **Tushar Chowdhury**  
 🎓 CSE Graduate | 💻 Passionate Software Engineer  
-📍 Loves building practical React projects and improving frontend skills  
+📍 Loves building practical React projects and exploring new front-end techniques  
 
 ---
 
 ## 🌟 Show Your Support!
 
-If you liked this project, please ⭐ the repository!  
-Every star helps me grow and continue learning 🚀  
+If you like this project, please ⭐ the repository — it really helps!  
+Your support motivates me to keep building and learning 🚀  
 
 <p align="center">
   <a href="https://github.com/TusharChow20/projectKitchenCar">
