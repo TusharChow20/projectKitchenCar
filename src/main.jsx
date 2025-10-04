@@ -30,8 +30,11 @@ const router = createBrowserRouter([
 const CompnentProvider = () => {
   const [addedFood, setAddedFood] = useState([]);
   const [serve, setServe] = useState([]);
+  const [cooking, setCooking] = useState([]);
   return (
-    <FoodContext.Provider value={{ addedFood, setAddedFood, serve, setServe }}>
+    <FoodContext.Provider
+      value={{ addedFood, setAddedFood, serve, setServe, cooking, setCooking }}
+    >
       <RouterProvider router={router} />
     </FoodContext.Provider>
   );

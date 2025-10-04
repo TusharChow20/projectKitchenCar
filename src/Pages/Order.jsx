@@ -1,32 +1,48 @@
-import { ForkKnife } from "lucide-react";
+import { Delete, ForkKnife, Trash } from "lucide-react";
 import React, { useContext, useEffect, useState } from "react";
 import { FoodContext } from "./FoodContext";
 
-const Order = ({ data }) => {
+const Order = ({ data, setAddedFood }) => {
   const [orderAlert, setOrderAlert] = useState(0);
   const [processingOrder, setProcessingOrder] = useState(false);
   const [isComplete, setIsComplete] = useState(false);
   const { serve, setServe } = useContext(FoodContext);
+  const { cooking, setCooking } = useContext(FoodContext);
   const handleClick = () => {
     if (processingOrder || isComplete) return;
-    setOrderAlert(3);
-
+    setOrderAlert(5);
+    setCooking([...cooking, data]);
     setProcessingOrder(true);
     setIsComplete(false);
   };
   useEffect(() => {
+    let timer;
     if (processingOrder && orderAlert > 0) {
-      setTimeout(() => {
-        setOrderAlert((prev) => prev - 1);
-        if (!serve.find((d) => data.id === d.id)) {
-          setServe([...serve, data]);
-        }
+      timer = setInterval(() => {
+        setOrderAlert((prev) => {
+          if (prev <= 1) {
+            clearInterval(timer);
+            setProcessingOrder(false);
+            setIsComplete(true);
+
+            // move from cooking → serve
+            setCooking((prevCook) =>
+              prevCook.filter((cook) => cook.id !== data.id)
+            );
+            setServe((prevServe) => {
+              if (!prevServe.find((d) => d.id === data.id)) {
+                return [...prevServe, data];
+              }
+              return prevServe;
+            });
+          }
+          return prev - 1;
+        });
       }, 1000);
-    } else if (orderAlert === 0 && processingOrder) {
-      setProcessingOrder(false);
-      setIsComplete(true);
     }
-  }, [orderAlert, processingOrder]);
+
+    return () => clearInterval(timer);
+  }, [cooking, data, orderAlert, processingOrder, serve, setCooking, setServe]);
   const formatTime = (seconds) => {
     const mins = Math.floor(seconds / 60);
     const secs = seconds % 60;
@@ -61,18 +77,29 @@ const Order = ({ data }) => {
           )}
           {isComplete && (
             <p className="mt-2 text-green-600 font-semibold">
-              Your order is ready! 🎉
+              Order is Ready To Serve...
             </p>
           )}
         </div>
 
-        <div>
-          <div className="flex gap-4">
-            <ForkKnife />
-            <p>{data.order_title}</p>
+        <div className="flex justify-between">
+          <div>
+            <div className="flex gap-4">
+              <ForkKnife />
+              <p>{data.order_title}</p>
+            </div>
+            <p className="text-xl text-amber-600">Instruction</p>
+            <p>{data.special_instruction}</p>
           </div>
-          <p className="text-xl text-amber-600">Instruction</p>
-          <p>{data.special_instruction}</p>
+          <button
+            onClick={() => {
+              setAddedFood((prevCook) =>
+                prevCook.filter((cook) => cook.id !== data.id)
+              );
+            }}
+          >
+            <Trash size={40} />
+          </button>
         </div>
       </div>
     </div>
