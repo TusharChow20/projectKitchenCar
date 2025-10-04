@@ -4,7 +4,6 @@
   <img src="https://img.shields.io/badge/React-v18.0-blue?style=flat-square&logo=react" />
   <img src="https://img.shields.io/badge/ContextAPI-React%20Hooks-orange?style=flat-square" />
   <img src="https://img.shields.io/badge/Deployed%20on-Netlify-success?style=flat-square&logo=netlify" />
-  <img src="https://img.shields.io/github/license/TusharChow20/projectKitchenCar?color=blueviolet" />
 </p>
 
 ---
