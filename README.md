@@ -76,7 +76,7 @@ This project was built to practice **React state management**, **Context API**, 
 
 
 <p align="center">
-  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXdhZjBnM2tyNTMyc3l3MGljZWNocHFjaHVmemd2YnBqdWtqNmpvYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/keUhKk6N8ktkslAErm/giphy.gif" width="650" alt="Kitchen Car Animation"/>
+  <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTVodnJra3QxaXdvMGd0bzdtcm9rNXZyNndpNWg1cm55dWxua2UzcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/z2nw1MVXRJVnXypfO1/giphy.gif" width="650" alt="Kitchen Car Animation"/>
 </p>
 
 ---
