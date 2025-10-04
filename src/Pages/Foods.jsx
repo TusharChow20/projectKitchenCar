@@ -1,11 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { useLoaderData } from "react-router";
 import Food from "./Food";
 import { FoodContext } from "./FoodContext";
 
 const Foods = () => {
   const { data } = useLoaderData();
-  const [addedFood, setAddedFood] = useState([]);
+  const { addedFood, setAddedFood } = useContext(FoodContext);
+  console.log(addedFood);
+
   return (
     <FoodContext.Provider value={{ addedFood, setAddedFood }}>
       <div className="mt-10 md:px-10 space-y-8 mb-10 ">

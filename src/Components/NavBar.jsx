@@ -61,12 +61,12 @@ const NavBar = () => {
               </Link>
             </li>
             <li>
-              <a
-                href="/foods"
+              <Link
+                to="/foods"
                 className=" border-b-2  border-[#fcb900] duration-500 ease-in-out  hover:scale-105 hover:shadow-lg"
               >
                 Foods
-              </a>
+              </Link>
             </li>
             <li>
               <a className="border-b-2 border-[#fcb900] duration-500 ease-in-out  hover:scale-105 hover:shadow-lg">

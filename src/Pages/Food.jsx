@@ -3,7 +3,6 @@ import { FoodContext } from "./FoodContext";
 import { useContext } from "react";
 const Food = ({ data }) => {
   const { addedFood, setAddedFood } = useContext(FoodContext);
-  // console.log(addedFood);
 
   return (
     <div className="flex flex-col-reverse text-2xl space-y-3 shadow-2xl p-8 md:p-10 rounded-xl">
