@@ -17,9 +17,6 @@
 
 ---
 
-<p align="center">
-  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXdhZjBnM2tyNTMyc3l3MGljZWNocHFjaHVmemd2YnBqdWtqNmpvYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/keUhKk6N8ktkslAErm/giphy.gif" width="650" alt="Kitchen Car Animation"/>
-</p>
 
 ---
 
@@ -77,8 +74,9 @@ This project was built to practice **React state management**, **Context API**, 
 
 ## 📸 Demo Preview
 
+
 <p align="center">
-  <img src="https://i.ibb.co/fGv9MMk/kitchen-car-preview.gif" width="700px" alt="Kitchen Car Demo Animation"/>
+  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXdhZjBnM2tyNTMyc3l3MGljZWNocHFjaHVmemd2YnBqdWtqNmpvYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/keUhKk6N8ktkslAErm/giphy.gif" width="650" alt="Kitchen Car Animation"/>
 </p>
 
 ---
